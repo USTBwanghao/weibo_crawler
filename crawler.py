@@ -20,7 +20,7 @@ def get_pic_url_list(uid):
     '''
     pic_url_list = []
     paper_wall = 'https://weibo.com/ajax/profile/getImageWall?uid={}&sinceid=0&has_album=true'.format(uid)
-    for i in range(5):
+    while True:
         res = requests.get(paper_wall,headers=headers)
         pic_list = res.json()['data']['list']
         since_id = res.json()['data']['since_id']
