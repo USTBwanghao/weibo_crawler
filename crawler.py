@@ -7,22 +7,7 @@ import tqdm
 uid = sys.argv[1]
 save_dir = sys.argv[2]
 
-headers ={
-"authority" : "weibo.com",
-"method": "GET",
-"path": "/ajax/profile/getImageWall?uid=6089298680&sinceid=0&has_album=true",
-"scheme": "https",
-"Accept": "application/json, text/plain, */*",
-"Accept-Encoding": "gzip, deflate, br",
-"Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
-"Cache-Control": "no-cache",
-"Client-Version": "v2.44.51",
-"Cookie": "SCF=AvkV0btqN0V1yiD_X_1ifbwmmksANtnbUp9TuFGRmkiGDaoB-uEC_Tm6SQA9bSOevbSb6okNmua65KHjult4Nvs.; PC_TOKEN=1d4060581a; UOR=,,login.sina.com.cn; wb_view_log=1920*10801; SINAGLOBAL=5830519516109.261.1705583826459; ULV=1705583826464:7:1:1:5830519516109.261.1705583826459:1701508230462; ALF=1708175868; SUB=_2A25IrVSsDeRhGeNI7lAQ9CvJyTiIHXVrw-hkrDV8PUJbkNAGLRGtkW1NSEgwDj5KLvdhHSKAII4EzAf1t2bwZqVL; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WFaMcGcoDcNnNj6.gDPp6Ow5JpX5KzhUgL.Fo-cSKzpSh-feoB2dJLoI0YLxK-L1K2L1-eLxK-L1K.L1-eLxK-L1K2L1-eLxK-L1K.L1-eLxKML1h.LBo.LxKqL12zL1h.LxKqL1-zLB.et; WBPSESS=x6mAOxU9FMPUL0b--zOh3IZU46gIxsFGxec4jaSOUbDSz8FPXX4HC1tHx4ZxLnuSt6EBu1eQfkEQkyXJCJEwWS1d_FUMxkSfVaUupPA69uJp7dq3x4r1l4Z68ODT5LBuU8lASPty4E-VRmrYF5KiDw==; XSRF-TOKEN=6RtBo8alBT4NzT5oVwydramk",
-"Pragma": "no-cache",
-"Referer": "https://weibo.com/uncleduobao?tabtype=album",
-"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0",
-"X-Requested-With": "XMLHttpRequest",
-"X-Xsrf-Token": "6RtBo8alBT4NzT5oVwydramk"}
+headers ={}
 
 def get_pic_url_list_imagewall(uid):
     '''
